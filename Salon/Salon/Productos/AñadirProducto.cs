@@ -50,12 +50,12 @@ namespace Salon.Clientes
 
                     if(Resultado.Equals("Ok"))
                     {
-                        MessageBox.Show("Se ha insertado el producto: "+txtNombreProducto.Text+" correctamente en la base de datos", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se ha insertado el producto: \""+txtNombreProducto.Text+"\" correctamente en la base de datos.", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //MessageBox.Show($"{Resultado}\n{producto.NombreProducto}", "Resultado");
                     }
                     else
                     {
-                        MessageBox.Show("El producto: "+txtNombreProducto.Text+" ya existe en la base de datos", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("El producto: \""+txtNombreProducto.Text+"\" ya existe en la base de datos.", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
 

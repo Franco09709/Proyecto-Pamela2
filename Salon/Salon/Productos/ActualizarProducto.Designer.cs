@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnActualizarProducto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtProveedor = new DrakeUI.Framework.DrakeUITextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecioProducto = new DrakeUI.Framework.DrakeUITextBox();
             this.txtNombreProducto = new DrakeUI.Framework.DrakeUITextBox();
-            this.Closeactprod = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.cbEstadoProd = new System.Windows.Forms.ComboBox();
             this.txtnumestado = new System.Windows.Forms.TextBox();
+            this.Closeactprod = new System.Windows.Forms.PictureBox();
+            this.btnActualizarProducto = new System.Windows.Forms.Button();
+            this.txtidprod = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Closeactprod)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,23 +57,6 @@
             this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 230;
             this.label1.Text = "Precio(*)";
-            // 
-            // btnActualizarProducto
-            // 
-            this.btnActualizarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
-            this.btnActualizarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarProducto.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarProducto.Image = global::Salon.Properties.Resources.icons8_guardar_24;
-            this.btnActualizarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizarProducto.Location = new System.Drawing.Point(288, 350);
-            this.btnActualizarProducto.Name = "btnActualizarProducto";
-            this.btnActualizarProducto.Size = new System.Drawing.Size(91, 32);
-            this.btnActualizarProducto.TabIndex = 229;
-            this.btnActualizarProducto.Text = "      Guardar";
-            this.btnActualizarProducto.UseVisualStyleBackColor = false;
-            this.btnActualizarProducto.Click += new System.EventHandler(this.btnActualizarProducto_Click);
             // 
             // label7
             // 
@@ -159,19 +143,6 @@
             this.txtNombreProducto.Style = DrakeUI.Framework.UIStyle.Custom;
             this.txtNombreProducto.TabIndex = 223;
             // 
-            // Closeactprod
-            // 
-            this.Closeactprod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Closeactprod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.Closeactprod.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.Closeactprod.Location = new System.Drawing.Point(343, 9);
-            this.Closeactprod.Name = "Closeactprod";
-            this.Closeactprod.Size = new System.Drawing.Size(28, 24);
-            this.Closeactprod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Closeactprod.TabIndex = 233;
-            this.Closeactprod.TabStop = false;
-            this.Closeactprod.Click += new System.EventHandler(this.Closeactprod_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -224,17 +195,57 @@
             // 
             // txtnumestado
             // 
-            this.txtnumestado.Location = new System.Drawing.Point(94, 253);
+            this.txtnumestado.Location = new System.Drawing.Point(79, 253);
             this.txtnumestado.Name = "txtnumestado";
-            this.txtnumestado.Size = new System.Drawing.Size(54, 20);
+            this.txtnumestado.Size = new System.Drawing.Size(45, 20);
             this.txtnumestado.TabIndex = 268;
+            this.txtnumestado.Visible = false;
             this.txtnumestado.TextChanged += new System.EventHandler(this.txtnumestado_TextChanged);
+            // 
+            // Closeactprod
+            // 
+            this.Closeactprod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Closeactprod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.Closeactprod.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
+            this.Closeactprod.Location = new System.Drawing.Point(343, 9);
+            this.Closeactprod.Name = "Closeactprod";
+            this.Closeactprod.Size = new System.Drawing.Size(28, 24);
+            this.Closeactprod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Closeactprod.TabIndex = 233;
+            this.Closeactprod.TabStop = false;
+            this.Closeactprod.Click += new System.EventHandler(this.Closeactprod_Click);
+            // 
+            // btnActualizarProducto
+            // 
+            this.btnActualizarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnActualizarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarProducto.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarProducto.Image = global::Salon.Properties.Resources.icons8_guardar_24;
+            this.btnActualizarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarProducto.Location = new System.Drawing.Point(288, 350);
+            this.btnActualizarProducto.Name = "btnActualizarProducto";
+            this.btnActualizarProducto.Size = new System.Drawing.Size(91, 32);
+            this.btnActualizarProducto.TabIndex = 229;
+            this.btnActualizarProducto.Text = "      Guardar";
+            this.btnActualizarProducto.UseVisualStyleBackColor = false;
+            this.btnActualizarProducto.Click += new System.EventHandler(this.btnActualizarProducto_Click);
+            // 
+            // txtidprod
+            // 
+            this.txtidprod.Location = new System.Drawing.Point(94, 62);
+            this.txtidprod.Name = "txtidprod";
+            this.txtidprod.Size = new System.Drawing.Size(45, 20);
+            this.txtidprod.TabIndex = 269;
+            this.txtidprod.Visible = false;
             // 
             // ActualizarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 391);
+            this.Controls.Add(this.txtidprod);
             this.Controls.Add(this.txtnumestado);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.cbEstadoProd);
@@ -276,5 +287,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cbEstadoProd;
         private System.Windows.Forms.TextBox txtnumestado;
+        private System.Windows.Forms.TextBox txtidprod;
     }
 }

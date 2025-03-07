@@ -45,7 +45,7 @@
             this.Closeagreservicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Closeagreservicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.Closeagreservicio.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.Closeagreservicio.Location = new System.Drawing.Point(403, 9);
+            this.Closeagreservicio.Location = new System.Drawing.Point(338, 9);
             this.Closeagreservicio.Name = "Closeagreservicio";
             this.Closeagreservicio.Size = new System.Drawing.Size(28, 24);
             this.Closeagreservicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -73,7 +73,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(443, 43);
+            this.label12.Size = new System.Drawing.Size(378, 43);
             this.label12.TabIndex = 224;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -83,7 +83,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(30, 91);
+            this.label2.Location = new System.Drawing.Point(25, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 228;
@@ -94,7 +94,7 @@
             this.drakeUITextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.drakeUITextBox1.FillColor = System.Drawing.Color.White;
             this.drakeUITextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drakeUITextBox1.Location = new System.Drawing.Point(31, 111);
+            this.drakeUITextBox1.Location = new System.Drawing.Point(26, 111);
             this.drakeUITextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drakeUITextBox1.Maximum = 2147483647D;
             this.drakeUITextBox1.Minimum = -2147483648D;
@@ -112,7 +112,7 @@
             this.drakeUITextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.drakeUITextBox9.FillColor = System.Drawing.Color.White;
             this.drakeUITextBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drakeUITextBox9.Location = new System.Drawing.Point(31, 177);
+            this.drakeUITextBox9.Location = new System.Drawing.Point(26, 177);
             this.drakeUITextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drakeUITextBox9.Maximum = 2147483647D;
             this.drakeUITextBox9.Minimum = -2147483648D;
@@ -131,7 +131,7 @@
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(30, 159);
+            this.label8.Location = new System.Drawing.Point(25, 159);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 17);
             this.label8.TabIndex = 229;
@@ -146,7 +146,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Salon.Properties.Resources.icons8_guardar_24;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(340, 298);
+            this.button1.Location = new System.Drawing.Point(275, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 32);
             this.button1.TabIndex = 233;
@@ -160,14 +160,14 @@
             this.label11.BackColor = System.Drawing.Color.DarkGray;
             this.label11.Location = new System.Drawing.Point(-1, 283);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(446, 1);
+            this.label11.Size = new System.Drawing.Size(381, 1);
             this.label11.TabIndex = 234;
             // 
             // AñadirServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 345);
+            this.ClientSize = new System.Drawing.Size(378, 345);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.drakeUITextBox9);

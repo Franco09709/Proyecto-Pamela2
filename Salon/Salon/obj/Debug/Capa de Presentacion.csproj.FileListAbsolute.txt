@@ -57,7 +57,6 @@ C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Nomina.TrabajarNomina.resources
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Clientes.AñadirProducto.resources
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Productos.MostrarProductos.resources
-C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Clientes.Productos.resources
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Empleados.AñadirEmpleados.resources
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Empleados.Empleado.resources
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Facturación.AñadirFactura.resources
@@ -81,3 +80,4 @@ C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.exe
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.pdb
 C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Productos.ActualizarProducto.resources
+C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Productos.Productosc.resources
