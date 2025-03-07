@@ -95,6 +95,7 @@ namespace Salon.Productos
                     else
                     {
                         MessageBox.Show("Perfecto, el registro se ha actualizado correctamente a la base de datos", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //Cuando se actualice el producto, se va a cerrar el formulario de actualizar producto y se va a refrescar el datagrid de producto
                         Padre.ListarProd();
                         this.Close();
                     }

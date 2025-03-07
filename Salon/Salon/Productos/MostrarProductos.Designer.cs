@@ -36,22 +36,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
             this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
+            this.Closemenu = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.DgvDatosProductosm = new DrakeUI.Framework.DrakeUIDataGridView();
-            this.btnSeleccionar = new System.Windows.Forms.Button();
-            this.CloseMostrarpro = new System.Windows.Forms.PictureBox();
-            this.Closemenu = new System.Windows.Forms.PictureBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSeleccionar = new System.Windows.Forms.Button();
+            this.CloseMostrarpro = new System.Windows.Forms.PictureBox();
             this.drakeUIGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductosm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseMostrarpro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             this.SuspendLayout();
             // 
             // drakeUIGradientPanel1
@@ -81,11 +81,22 @@
             this.drakeUITextBox2.Minimum = -2147483648D;
             this.drakeUITextBox2.Name = "drakeUITextBox2";
             this.drakeUITextBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.drakeUITextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.drakeUITextBox2.RectColor = System.Drawing.Color.White;
             this.drakeUITextBox2.RectDisableColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
             this.drakeUITextBox2.Size = new System.Drawing.Size(225, 27);
             this.drakeUITextBox2.Style = DrakeUI.Framework.UIStyle.Custom;
             this.drakeUITextBox2.TabIndex = 0;
+            // 
+            // Closemenu
+            // 
+            this.Closemenu.BackColor = System.Drawing.Color.White;
+            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
+            this.Closemenu.Location = new System.Drawing.Point(17, 1);
+            this.Closemenu.Name = "Closemenu";
+            this.Closemenu.Size = new System.Drawing.Size(26, 30);
+            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Closemenu.TabIndex = 225;
+            this.Closemenu.TabStop = false;
             // 
             // label9
             // 
@@ -183,47 +194,6 @@
             this.DgvDatosProductosm.TabIndex = 240;
             this.DgvDatosProductosm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatosProductosm_CellClick);
             // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSeleccionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
-            this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeleccionar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionar.Image = global::Salon.Properties.Resources.icons8_más_2_matemáticas_23;
-            this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeleccionar.Location = new System.Drawing.Point(733, 97);
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(108, 32);
-            this.btnSeleccionar.TabIndex = 239;
-            this.btnSeleccionar.Text = "      Seleccionar";
-            this.btnSeleccionar.UseVisualStyleBackColor = false;
-            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
-            // 
-            // CloseMostrarpro
-            // 
-            this.CloseMostrarpro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseMostrarpro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CloseMostrarpro.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.CloseMostrarpro.Location = new System.Drawing.Point(818, 10);
-            this.CloseMostrarpro.Name = "CloseMostrarpro";
-            this.CloseMostrarpro.Size = new System.Drawing.Size(28, 24);
-            this.CloseMostrarpro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.CloseMostrarpro.TabIndex = 238;
-            this.CloseMostrarpro.TabStop = false;
-            this.CloseMostrarpro.Click += new System.EventHandler(this.CloseMostrarpro_Click);
-            // 
-            // Closemenu
-            // 
-            this.Closemenu.BackColor = System.Drawing.Color.White;
-            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
-            this.Closemenu.Location = new System.Drawing.Point(17, 1);
-            this.Closemenu.Name = "Closemenu";
-            this.Closemenu.Size = new System.Drawing.Size(26, 30);
-            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Closemenu.TabIndex = 225;
-            this.Closemenu.TabStop = false;
-            // 
             // Id
             // 
             this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -270,6 +240,36 @@
             this.FechaIngreso.HeaderText = "Fecha Ingreso";
             this.FechaIngreso.Name = "FechaIngreso";
             // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSeleccionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeleccionar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
+            this.btnSeleccionar.Image = global::Salon.Properties.Resources.icons8_más_2_matemáticas_23;
+            this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeleccionar.Location = new System.Drawing.Point(733, 97);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(108, 32);
+            this.btnSeleccionar.TabIndex = 239;
+            this.btnSeleccionar.Text = "      Seleccionar";
+            this.btnSeleccionar.UseVisualStyleBackColor = false;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
+            // 
+            // CloseMostrarpro
+            // 
+            this.CloseMostrarpro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseMostrarpro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CloseMostrarpro.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
+            this.CloseMostrarpro.Location = new System.Drawing.Point(818, 10);
+            this.CloseMostrarpro.Name = "CloseMostrarpro";
+            this.CloseMostrarpro.Size = new System.Drawing.Size(28, 24);
+            this.CloseMostrarpro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.CloseMostrarpro.TabIndex = 238;
+            this.CloseMostrarpro.TabStop = false;
+            this.CloseMostrarpro.Click += new System.EventHandler(this.CloseMostrarpro_Click);
+            // 
             // MostrarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,9 +287,9 @@
             this.Text = "MostrarProducto1";
             this.Load += new System.EventHandler(this.MostrarProductos_Load);
             this.drakeUIGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductosm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseMostrarpro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

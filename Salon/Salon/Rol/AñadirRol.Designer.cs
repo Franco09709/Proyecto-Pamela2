@@ -48,7 +48,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(0, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(541, 43);
+            this.label12.Size = new System.Drawing.Size(354, 43);
             this.label12.TabIndex = 222;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -112,7 +112,7 @@
             this.label11.BackColor = System.Drawing.Color.DarkGray;
             this.label11.Location = new System.Drawing.Point(0, 305);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(541, 1);
+            this.label11.Size = new System.Drawing.Size(354, 1);
             this.label11.TabIndex = 231;
             // 
             // drakeUITextBox1
@@ -141,7 +141,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Salon.Properties.Resources.icons8_guardar_24;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(438, 319);
+            this.button1.Location = new System.Drawing.Point(251, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 32);
             this.button1.TabIndex = 232;
@@ -153,7 +153,7 @@
             this.CloseagregarRol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseagregarRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.CloseagregarRol.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.CloseagregarRol.Location = new System.Drawing.Point(507, 9);
+            this.CloseagregarRol.Location = new System.Drawing.Point(320, 9);
             this.CloseagregarRol.Name = "CloseagregarRol";
             this.CloseagregarRol.Size = new System.Drawing.Size(28, 24);
             this.CloseagregarRol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 360);
+            this.ClientSize = new System.Drawing.Size(354, 360);
             this.Controls.Add(this.CloseagregarRol);
             this.Controls.Add(this.drakeUITextBox1);
             this.Controls.Add(this.button1);

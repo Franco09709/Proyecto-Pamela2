@@ -19,6 +19,13 @@ namespace Capa_de_Negocio
             return DProducto.ListarProducto();
         }
 
+        //Metodo de buscar productos
+        public static DataTable BuscarProducto(EProducto producto)
+        {
+
+            return DProducto.BuscarProducto(producto);
+        }
+
         //Metodo para insertar productos
 
         public static string AgregarProducto(EProducto producto)
