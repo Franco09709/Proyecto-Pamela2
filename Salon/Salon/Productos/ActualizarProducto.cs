@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Capa_de_Entidad;
+using Capa_de_Negocio;
+using Salon.Clientes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +15,27 @@ namespace Salon.Productos
 {
     public partial class ActualizarProducto : Form
     {
-        public ActualizarProducto()
+        private Productosc Padre;
+        private string NombreAnt;
+
+        public ActualizarProducto(Productosc Padre1, string Idprod, string NombreProd, string Precioprod, string Proveedorprod, string Estadoprod)
         {
             InitializeComponent();
+            Padre = Padre1;
+            txtidprod.Text = Idprod;
+            NombreAnt = NombreProd;
+            txtNombreProducto.Text =NombreProd;
+            txtPrecioProducto.Text = Precioprod;
+            txtProveedor.Text = Proveedorprod;
+            cbEstadoProd.Text = Estadoprod;
+            
+
         }
 
         private void ActualizarProducto_Load(object sender, EventArgs e)
-        {
+        {   
 
+      
         }
 
         private void cbEstadoProd_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,17 +66,44 @@ namespace Salon.Productos
 
         private void txtnumestado_TextChanged(object sender, EventArgs e)
         {
-            
-
-
-
-
-
+           
         }
 
         private void btnActualizarProducto_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string Resultado = "";
+                EProducto producto = new EProducto();
+                producto.Id= Convert.ToInt32(txtidprod.Text);
+                producto.NombreAnterior = NombreAnt;
+                producto.NombreProducto = txtNombreProducto.Text; 
+                producto.Precio= Convert.ToDecimal(txtPrecioProducto.Text);
+                producto.Proveedor = txtProveedor.Text;
+                producto.Estado = Convert.ToBoolean(txtnumestado.Text);
 
+                DialogResult dialogResult = MessageBox.Show("¿Desea actualizar el producto?", "Actualizar producto", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //llamamos a la capa de negocio
+                    Resultado = NProducto.ActualizarProducto(producto);
+
+                    if (Resultado == "Existe")
+                    {
+                        MessageBox.Show("No se puede actualizar el registro a: \"" + txtNombreProducto.Text + "\" porque ya existe en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Perfecto, el registro se ha actualizado correctamente a la base de datos", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Padre.ListarProd();
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

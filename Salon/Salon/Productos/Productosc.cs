@@ -1,5 +1,5 @@
 ﻿using Capa_de_Negocio;
-using Salon.Productos;
+using Salon.Clientes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,37 +10,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Salon.Clientes
+namespace Salon.Productos
 {
-    public partial class Productos : Form
+    public partial class Productosc : Form
     {
-        public Productos()
+        public Productosc()
         {
             InitializeComponent();
         }
 
-        private void btnAgregclient_Click(object sender, EventArgs e)
-        {
-            AñadirProducto añadirCliente =new AñadirProducto();
-            añadirCliente.ShowDialog();
-        }
 
-        public void ListarProducto()
+
+        public void ListarProd()
         {
             try
             {
                 DgvDatosProductos.DataSource = NProducto.ListarProducto();
             }
             catch (Exception ex)
+
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void Productos_Load(object sender, EventArgs e)
-        {   
+        private void Productosc_Load(object sender, EventArgs e)
+        {
             DgvDatosProductos.ReadOnly = true;
-            this.ListarProducto();
+            ListarProd();
+        }
+
+        private void btnAgregProd_Click(object sender, EventArgs e)
+        {
+            AñadirProducto añadirProducto = new AñadirProducto();
+            añadirProducto.ShowDialog();
         }
 
         private void DgvDatosProductos_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -64,17 +67,32 @@ namespace Salon.Clientes
 
         private void DgvDatosProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (DgvDatosProductos.SelectedRows.Count > 0)
-            {
-                DataGridViewRow filaseleccionada = DgvDatosProductos.SelectedRows[0];
-                string Nombreprod= filaseleccionada.Cells["NombreProducto"].Value.ToString();
-                decimal precio = Convert.ToDecimal(filaseleccionada.Cells["Precio"].Value);
-                string Proveedor = filaseleccionada.Cells["Proveedor"].Value.ToString();
-                string Estado = filaseleccionada.Cells["Estado"].Value.ToString();
 
-                ActualizarProducto actualizarProducto = new ActualizarProducto();
-                actualizarProducto.ShowDialog();
+            if (e.RowIndex >= 0 && DgvDatosProductos.Columns[e.ColumnIndex].Name == "editar")
+            {
+                {
+                    DataGridViewRow filaseleccionada = DgvDatosProductos.SelectedRows[0];
+                    string Idprod = filaseleccionada.Cells["Id"].Value.ToString();
+                    string Nombreprod = filaseleccionada.Cells["NombreProducto"].Value.ToString();
+                    string Precioprod = filaseleccionada.Cells["Precio"].Value.ToString();
+                    string Proveedorprod = filaseleccionada.Cells["Proveedor"].Value.ToString();
+                    string Estadoprod = filaseleccionada.Cells["Estado"].Value.ToString();
+
+                    ActualizarProducto actualizarProducto = new ActualizarProducto(this,Idprod, Nombreprod, Precioprod, Proveedorprod, Estadoprod);
+                    actualizarProducto.ShowDialog();
+                }
             }
+        }
+
+        private void DgvDatosProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DgvDatosProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+   
         }
     }
 }
+

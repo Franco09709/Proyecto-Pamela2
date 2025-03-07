@@ -108,32 +108,20 @@ namespace Capa_de_Datos
             try
             {
                 sqlcon = Conexion.GetInstancia().CrearConexion();
-                SqlCommand comando = new SqlCommand("Productos_Actualizar_sin_fotos", sqlcon);
+                SqlCommand comando = new SqlCommand("Productos_Actualizar_sin_Foto", sqlcon);
                 comando.CommandType = CommandType.StoredProcedure;
 
                 //Parametros de entrada
+                comando.Parameters.Add("@ProductoId", SqlDbType.Int).Value = producto.Id;
                 comando.Parameters.Add("@NombreProducto", SqlDbType.NVarChar).Value = producto.NombreProducto;
                 comando.Parameters.Add("@Precio", SqlDbType.Decimal).Value = producto.Precio;
                 comando.Parameters.Add("@Proveedor", SqlDbType.NVarChar).Value = producto.Proveedor;
-
-                //Parametro de salida
-
-                //El 2 indica que el campo NVARCHAR tendrá un máximo de 2 caracteres (puede ser "Si" o "No" en este caso).
-                SqlParameter paramEncontrado = new SqlParameter("@Encontrado", SqlDbType.NVarChar, 2);
-                paramEncontrado.Direction = ParameterDirection.Output;
-                comando.Parameters.Add(paramEncontrado);
+                comando.Parameters.Add("@Estado", SqlDbType.Bit).Value = producto.Estado;
 
                 sqlcon.Open();
                 //Ejecutamos el procedimiento almacenado
+
                 comando.ExecuteNonQuery();
-
-                //Obtenemos el resultado del parametro de salida
-                string Encontrado = paramEncontrado.Value.ToString();
-
-                if (Encontrado == "Si")
-                    Resultado = "Existe";
-                else
-                    Resultado = "Ok";
 
             }
             catch (Exception ex)
@@ -164,15 +152,15 @@ namespace Capa_de_Datos
                 comando.CommandType = CommandType.StoredProcedure;
 
                 comando.Parameters.Add("@NombreProducto", SqlDbType.NVarChar).Value = producto.NombreProducto;
-                SqlParameter ParExiste = new SqlParameter();
-                ParExiste.ParameterName = "@Encontrado";
+                SqlParameter paramEncontrado = new SqlParameter("@Encontrado", SqlDbType.NVarChar, 2);
+                paramEncontrado.ParameterName = "@Encontrado";
 
-                ParExiste.SqlDbType = SqlDbType.NVarChar;
-                ParExiste.Direction = ParameterDirection.Output;
-                comando.Parameters.Add(ParExiste);
+                paramEncontrado.SqlDbType = SqlDbType.NVarChar;
+                paramEncontrado.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(paramEncontrado);
                 sqlcon.Open();
                 comando.ExecuteNonQuery();
-                Resultado = Convert.ToString(ParExiste.Value);
+                Resultado = Convert.ToString(paramEncontrado.Value);
 
             }
             catch (Exception ex)
