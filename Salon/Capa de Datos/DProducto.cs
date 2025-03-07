@@ -45,6 +45,40 @@ namespace Capa_de_Datos
 
         }
 
+        //Metodo para buscar productos
+        public static DataTable BuscarProducto(EProducto producto)
+        {
+            SqlDataReader Resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection Sqlcon = new SqlConnection();
+
+            try
+            {
+                //Obteniendo la cadena de conexion
+                Sqlcon = Conexion.GetInstancia().CrearConexion();
+                SqlCommand comando = new SqlCommand("Productos_Buscar", Sqlcon);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@NombreProducto", SqlDbType.NVarChar).Value = producto.NombreProducto;
+                Sqlcon.Open();
+                Resultado = comando.ExecuteReader();
+                tabla.Load(Resultado);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            finally
+            {
+                if (Sqlcon.State == ConnectionState.Open)
+                {
+                    Sqlcon.Close();
+                }
+            }
+
+        }
+
         //Metodo para insertar productos
 
         public static string InsertarProductos(EProducto producto)
@@ -148,7 +182,7 @@ namespace Capa_de_Datos
             {
                 //Obtenemos la cadena de conexion
                 sqlcon = Conexion.GetInstancia().CrearConexion();
-                SqlCommand comando = new SqlCommand("Producto_Actualizar_Existe", sqlcon);
+                SqlCommand comando = new SqlCommand("Productos_Actualizar_Existe", sqlcon);
                 comando.CommandType = CommandType.StoredProcedure;
 
                 comando.Parameters.Add("@NombreProducto", SqlDbType.NVarChar).Value = producto.NombreProducto;

@@ -1,4 +1,5 @@
-﻿using Capa_de_Negocio;
+﻿using Capa_de_Entidad;
+using Capa_de_Negocio;
 using Salon.Clientes;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,19 @@ namespace Salon.Productos
             try
             {
                 DgvDatosProductos.DataSource = NProducto.ListarProducto();
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void BuscarProd(EProducto producto)
+        {
+            try
+            {
+                DgvDatosProductos.DataSource = NProducto.BuscarProducto(producto);
             }
             catch (Exception ex)
 
@@ -92,6 +106,14 @@ namespace Salon.Productos
         private void DgvDatosProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
    
+        }
+
+        private void txtBuscarProd_TextChanged(object sender, EventArgs e)
+        {   
+            EProducto producto = new EProducto();
+            producto.NombreProducto= txtBuscarProd.Text;
+            
+            BuscarProd(producto);
         }
     }
 }

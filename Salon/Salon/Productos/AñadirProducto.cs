@@ -14,9 +14,11 @@ namespace Salon.Clientes
 {
     public partial class AñadirProducto : Form
     {
-        public AñadirProducto()
+        public Productos.Productosc Padre;
+        public AñadirProducto(Productos.Productosc Padre1)
         {
             InitializeComponent();
+            Padre = Padre1;
         }
 
         private void Closeagregclient_Click(object sender, EventArgs e)
@@ -51,7 +53,9 @@ namespace Salon.Clientes
                     if(Resultado.Equals("Ok"))
                     {
                         MessageBox.Show("Se ha insertado el producto: \""+txtNombreProducto.Text+"\" correctamente en la base de datos.", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //MessageBox.Show($"{Resultado}\n{producto.NombreProducto}", "Resultado");
+                        //Cuando se haga el insert, se cerrara el form de añadir productos y se va refrescar el datagrid de productos
+                        Padre.ListarProd();
+                        this.Close();
                     }
                     else
                     {
