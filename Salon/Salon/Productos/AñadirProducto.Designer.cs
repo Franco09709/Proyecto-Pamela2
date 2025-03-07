@@ -48,7 +48,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 89);
+            this.label2.Location = new System.Drawing.Point(21, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 18;
@@ -59,7 +59,7 @@
             this.txtPrecioProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrecioProducto.FillColor = System.Drawing.Color.White;
             this.txtPrecioProducto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioProducto.Location = new System.Drawing.Point(22, 172);
+            this.txtPrecioProducto.Location = new System.Drawing.Point(22, 158);
             this.txtPrecioProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPrecioProducto.Maximum = 2147483647D;
             this.txtPrecioProducto.Minimum = -2147483648D;
@@ -76,7 +76,7 @@
             this.txtNombreProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreProducto.FillColor = System.Drawing.Color.White;
             this.txtNombreProducto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreProducto.Location = new System.Drawing.Point(22, 109);
+            this.txtNombreProducto.Location = new System.Drawing.Point(22, 95);
             this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombreProducto.Maximum = 2147483647D;
             this.txtNombreProducto.Minimum = -2147483648D;
@@ -94,7 +94,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(21, 220);
+            this.label3.Location = new System.Drawing.Point(21, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 21;
@@ -105,7 +105,7 @@
             this.txtProveedor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProveedor.FillColor = System.Drawing.Color.White;
             this.txtProveedor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProveedor.Location = new System.Drawing.Point(24, 239);
+            this.txtProveedor.Location = new System.Drawing.Point(24, 225);
             this.txtProveedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtProveedor.Maximum = 2147483647D;
             this.txtProveedor.Minimum = -2147483648D;
@@ -137,7 +137,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(399, 43);
+            this.label8.Size = new System.Drawing.Size(383, 43);
             this.label8.TabIndex = 55;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -146,9 +146,9 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.BackColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(1, 359);
+            this.label7.Location = new System.Drawing.Point(1, 318);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(397, 1);
+            this.label7.Size = new System.Drawing.Size(381, 1);
             this.label7.TabIndex = 219;
             // 
             // label1
@@ -157,7 +157,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(19, 152);
+            this.label1.Location = new System.Drawing.Point(19, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 222;
@@ -168,7 +168,7 @@
             this.Closeagregclient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Closeagregclient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.Closeagregclient.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.Closeagregclient.Location = new System.Drawing.Point(359, 9);
+            this.Closeagregclient.Location = new System.Drawing.Point(343, 9);
             this.Closeagregclient.Name = "Closeagregclient";
             this.Closeagregclient.Size = new System.Drawing.Size(28, 24);
             this.Closeagregclient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -185,7 +185,7 @@
             this.btnGuardarProducto.ForeColor = System.Drawing.Color.White;
             this.btnGuardarProducto.Image = global::Salon.Properties.Resources.icons8_guardar_24;
             this.btnGuardarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarProducto.Location = new System.Drawing.Point(296, 373);
+            this.btnGuardarProducto.Location = new System.Drawing.Point(280, 332);
             this.btnGuardarProducto.Name = "btnGuardarProducto";
             this.btnGuardarProducto.Size = new System.Drawing.Size(91, 32);
             this.btnGuardarProducto.TabIndex = 220;
@@ -197,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 413);
+            this.ClientSize = new System.Drawing.Size(383, 374);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Closeagregclient);
             this.Controls.Add(this.btnGuardarProducto);

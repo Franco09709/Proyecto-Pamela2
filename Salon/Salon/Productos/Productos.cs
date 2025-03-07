@@ -1,4 +1,5 @@
 ﻿using Capa_de_Negocio;
+using Salon.Productos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,6 +41,40 @@ namespace Salon.Clientes
         {   
             DgvDatosProductos.ReadOnly = true;
             this.ListarProducto();
+        }
+
+        private void DgvDatosProductos_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            //Añadiendo el boton de editar al datagridview
+            if (e.ColumnIndex == DgvDatosProductos.Columns["editar"].Index && e.RowIndex >= 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                // Cargar la imagen
+                Image editImage = Properties.Resources.editardef1;
+
+                // Dibujar la imagen centrada
+                int imageX = e.CellBounds.Left + (e.CellBounds.Width - editImage.Width) / 2;
+                int imageY = e.CellBounds.Top + (e.CellBounds.Height - editImage.Height) / 2;
+                e.Graphics.DrawImage(editImage, new Point(imageX, imageY));
+
+                e.Handled = true;
+            }
+        }
+
+        private void DgvDatosProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (DgvDatosProductos.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaseleccionada = DgvDatosProductos.SelectedRows[0];
+                string Nombreprod= filaseleccionada.Cells["NombreProducto"].Value.ToString();
+                decimal precio = Convert.ToDecimal(filaseleccionada.Cells["Precio"].Value);
+                string Proveedor = filaseleccionada.Cells["Proveedor"].Value.ToString();
+                string Estado = filaseleccionada.Cells["Estado"].Value.ToString();
+
+                ActualizarProducto actualizarProducto = new ActualizarProducto();
+                actualizarProducto.ShowDialog();
+            }
         }
     }
 }

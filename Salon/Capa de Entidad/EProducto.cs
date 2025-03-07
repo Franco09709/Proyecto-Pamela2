@@ -11,6 +11,7 @@ namespace Capa_de_Entidad
 
         public string NombreProducto { get; set; }
 
+        public string NombreAnterior { get; set; }
         public decimal Precio { get; set; }
 
         public string Proveedor { get; set; }
