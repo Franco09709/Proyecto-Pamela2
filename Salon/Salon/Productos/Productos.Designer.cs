@@ -38,7 +38,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
             this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
+            this.Closemenu = new System.Windows.Forms.PictureBox();
             this.DgvDatosProductos = new DrakeUI.Framework.DrakeUIDataGridView();
+            this.editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,12 +48,11 @@
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Closemenu = new System.Windows.Forms.PictureBox();
             this.btnAgregclient = new System.Windows.Forms.Button();
             this.drakeUIGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,6 +111,17 @@
             this.drakeUITextBox2.Style = DrakeUI.Framework.UIStyle.Custom;
             this.drakeUITextBox2.TabIndex = 0;
             // 
+            // Closemenu
+            // 
+            this.Closemenu.BackColor = System.Drawing.Color.White;
+            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
+            this.Closemenu.Location = new System.Drawing.Point(17, 1);
+            this.Closemenu.Name = "Closemenu";
+            this.Closemenu.Size = new System.Drawing.Size(26, 30);
+            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Closemenu.TabIndex = 225;
+            this.Closemenu.TabStop = false;
+            // 
             // DgvDatosProductos
             // 
             this.DgvDatosProductos.AllowUserToAddRows = false;
@@ -137,6 +149,7 @@
             this.DgvDatosProductos.ColumnHeadersHeight = 32;
             this.DgvDatosProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvDatosProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.editar,
             this.Id,
             this.NombreProducto,
             this.Precio,
@@ -175,11 +188,20 @@
             this.DgvDatosProductos.SelectedIndex = -1;
             this.DgvDatosProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvDatosProductos.ShowRect = false;
-            this.DgvDatosProductos.Size = new System.Drawing.Size(916, 339);
+            this.DgvDatosProductos.Size = new System.Drawing.Size(916, 355);
             this.DgvDatosProductos.StripeOddColor = System.Drawing.Color.White;
             this.DgvDatosProductos.Style = DrakeUI.Framework.UIStyle.Custom;
             this.DgvDatosProductos.StyleCustomMode = true;
             this.DgvDatosProductos.TabIndex = 235;
+            this.DgvDatosProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatosProductos_CellClick);
+            this.DgvDatosProductos.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DgvDatosProductos_CellPainting);
+            // 
+            // editar
+            // 
+            this.editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.editar.HeaderText = "";
+            this.editar.Name = "editar";
+            this.editar.Width = 55;
             // 
             // Id
             // 
@@ -192,31 +214,28 @@
             // 
             // NombreProducto
             // 
-            this.NombreProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.NombreProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.NombreProducto.DataPropertyName = "NombreProducto";
             this.NombreProducto.HeaderText = "Nombre";
             this.NombreProducto.Name = "NombreProducto";
-            this.NombreProducto.Width = 260;
             // 
             // Precio
             // 
-            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Precio.DataPropertyName = "Precio";
             this.Precio.HeaderText = "Precio";
             this.Precio.Name = "Precio";
-            this.Precio.Width = 130;
             // 
             // Proveedor
             // 
-            this.Proveedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Proveedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Proveedor.DataPropertyName = "Proveedor";
             this.Proveedor.HeaderText = "Proveedor";
             this.Proveedor.Name = "Proveedor";
-            this.Proveedor.Width = 189;
             // 
             // Estado
             // 
-            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Estado.DataPropertyName = "Estado";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Estado.DefaultCellStyle = dataGridViewCellStyle3;
@@ -225,11 +244,10 @@
             // 
             // FechaIngreso
             // 
-            this.FechaIngreso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.FechaIngreso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.FechaIngreso.DataPropertyName = "FechaIngreso";
             this.FechaIngreso.HeaderText = "Fecha Ingreso";
             this.FechaIngreso.Name = "FechaIngreso";
-            this.FechaIngreso.Width = 145;
             // 
             // pictureBox1
             // 
@@ -240,17 +258,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 234;
             this.pictureBox1.TabStop = false;
-            // 
-            // Closemenu
-            // 
-            this.Closemenu.BackColor = System.Drawing.Color.White;
-            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
-            this.Closemenu.Location = new System.Drawing.Point(17, 1);
-            this.Closemenu.Name = "Closemenu";
-            this.Closemenu.Size = new System.Drawing.Size(26, 30);
-            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Closemenu.TabIndex = 225;
-            this.Closemenu.TabStop = false;
             // 
             // btnAgregclient
             // 
@@ -285,9 +292,9 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Productos_Load);
             this.drakeUIGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,6 +309,7 @@
         private System.Windows.Forms.PictureBox Closemenu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DrakeUI.Framework.DrakeUIDataGridView DgvDatosProductos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn editar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
