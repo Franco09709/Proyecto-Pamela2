@@ -39,11 +39,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Closemenu = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.btnfacturacion = new System.Windows.Forms.Button();
             this.btnRol = new System.Windows.Forms.Button();
             this.btnEmpleado = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Minmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maxmenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -197,23 +197,6 @@
             this.button5.Text = "Dashboard";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // btnClientes
-            // 
-            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Image = global::Salon.Properties.Resources.producto;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(1, 239);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(176, 37);
-            this.btnClientes.TabIndex = 10;
-            this.btnClientes.Text = "Productos";
-            this.btnClientes.UseVisualStyleBackColor = false;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
             // btnfacturacion
             // 
             this.btnfacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
@@ -282,12 +265,30 @@
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
+            // btnProductos
+            // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.Image = global::Salon.Properties.Resources.producto;
+            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductos.Location = new System.Drawing.Point(1, 239);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(176, 37);
+            this.btnProductos.TabIndex = 151;
+            this.btnProductos.Text = "Productos";
+            this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1222, 710);
+            this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnNomina);
             this.Controls.Add(this.Minmenu);
@@ -298,7 +299,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Closemenu);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.Contenedormenu);
             this.Controls.Add(this.btnfacturacion);
             this.Controls.Add(this.btnRol);
@@ -325,7 +325,6 @@
         private System.Windows.Forms.Button btnRol;
         private System.Windows.Forms.Button btnfacturacion;
         private System.Windows.Forms.Panel Contenedormenu;
-        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox Closemenu;
         private System.Windows.Forms.Label label4;
@@ -336,6 +335,7 @@
         private System.Windows.Forms.PictureBox Minmenu;
         private System.Windows.Forms.PictureBox Maxmenu;
         private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnProductos;
     }
 }
 

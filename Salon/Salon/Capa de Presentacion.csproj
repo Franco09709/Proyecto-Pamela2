@@ -79,6 +79,12 @@
     <Compile Include="Nomina\TrabajarNomina.Designer.cs">
       <DependentUpon>TrabajarNomina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Productos\ActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\ActualizarProducto.Designer.cs">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Productos\AñadirProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +96,6 @@
     </Compile>
     <Compile Include="Productos\MostrarProductos.Designer.cs">
       <DependentUpon>MostrarProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Productos\Productos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Productos\Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleados\AñadirEmpleados.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="Facturación\AñadirFactura.Designer.cs">
       <DependentUpon>AñadirFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\Productosc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\Productosc.Designer.cs">
+      <DependentUpon>Productosc.cs</DependentUpon>
     </Compile>
     <Compile Include="Servicios\MostrarServicios.cs">
       <SubType>Form</SubType>
@@ -210,14 +216,14 @@
     <EmbeddedResource Include="Nomina\TrabajarNomina.resx">
       <DependentUpon>TrabajarNomina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Productos\ActualizarProducto.resx">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Productos\AñadirProducto.resx">
       <DependentUpon>AñadirProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Productos\MostrarProductos.resx">
       <DependentUpon>MostrarProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Productos.resx">
-      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\AñadirEmpleados.resx">
       <DependentUpon>AñadirEmpleados.cs</DependentUpon>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturación\AñadirFactura.resx">
       <DependentUpon>AñadirFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\Productosc.resx">
+      <DependentUpon>Productosc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\MostrarServicios.resx">
       <DependentUpon>MostrarServicios.cs</DependentUpon>

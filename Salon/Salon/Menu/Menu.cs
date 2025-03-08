@@ -72,11 +72,7 @@ namespace Salon
             AbrirFormulario(servicios);
         }
 
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            Clientes.Productos clientes= new Clientes.Productos();
-            AbrirFormulario(clientes);
-        }
+     
 
         private void btnfacturacion_Click(object sender, EventArgs e)
         {
@@ -130,6 +126,12 @@ namespace Salon
         {
             Usuarios.Usuarios usuarios = new Usuarios.Usuarios();
             AbrirFormulario(usuarios);
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            Productos.Productosc productosc=new Productos.Productosc();
+            AbrirFormulario(productosc);
         }
     }
 }
