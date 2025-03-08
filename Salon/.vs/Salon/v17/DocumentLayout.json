@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\",
+  "WorkspaceRootPath": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de negocio\\nservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|c:\\users\\loteka\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\capa de negocio\\nservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|solutionrelative:capa de negocio\\nservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de negocio\\nproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de negocio\\nproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6EDCD86-B2D0-4EB4-93EB-2FB2B0781B51}|Capa de Negocio\\Capa de Negocio.csproj|solutionrelative:capa de negocio\\nproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de entidad\\eproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de entidad\\eproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|solutionrelative:capa de entidad\\eproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de entidad\\eservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de entidad\\eservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF31634A-B181-487D-9411-E2BF60C37E14}|Capa de Entidad\\Capa de Entidad.csproj|solutionrelative:capa de entidad\\eservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto manicure pamela\\proyecto-pamela2\\salon\\capa de datos\\dproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\capa de datos\\dproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\dproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,45 +40,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NProducto.cs",
-              "RelativeDocumentMoniker": "Capa de Negocio\\NProducto.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NProducto.cs",
-              "RelativeToolTip": "Capa de Negocio\\NProducto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T02:06:00.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EProducto.cs",
-              "RelativeDocumentMoniker": "Capa de Entidad\\EProducto.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EProducto.cs",
-              "RelativeToolTip": "Capa de Entidad\\EProducto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:03:32.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DProducto.cs",
-              "RelativeDocumentMoniker": "Capa de Datos\\DProducto.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DProducto.cs",
-              "RelativeToolTip": "Capa de Datos\\DProducto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:03:10.924Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -93,26 +54,61 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NProducto.cs",
+              "RelativeDocumentMoniker": "Capa de Negocio\\NProducto.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NProducto.cs",
+              "RelativeToolTip": "Capa de Negocio\\NProducto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T02:06:00.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EProducto.cs",
+              "RelativeDocumentMoniker": "Capa de Entidad\\EProducto.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EProducto.cs",
+              "RelativeToolTip": "Capa de Entidad\\EProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T01:03:32.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DProducto.cs",
+              "RelativeDocumentMoniker": "Capa de Datos\\DProducto.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DProducto.cs",
+              "RelativeToolTip": "Capa de Datos\\DProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T01:03:10.924Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
               "RelativeDocumentMoniker": "Capa de Datos\\DServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
               "RelativeToolTip": "Capa de Datos\\DServicio.cs",
               "ViewState": "AgIAANkAAAAAAAAAAAAAAJEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T23:41:44.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T23:41:44.44Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NServicio.cs",
               "RelativeDocumentMoniker": "Capa de Negocio\\NServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NServicio.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Negocio\\NServicio.cs",
               "RelativeToolTip": "Capa de Negocio\\NServicio.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T23:40:37.478Z",
               "EditorCaption": ""
@@ -121,27 +117,25 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "EServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EServicio.cs",
               "RelativeDocumentMoniker": "Capa de Entidad\\EServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EServicio.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Entidad\\EServicio.cs",
               "RelativeToolTip": "Capa de Entidad\\EServicio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T23:35:23.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T23:35:23.148Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
               "RelativeDocumentMoniker": "Capa de Datos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO MANICURE PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Loteka\\Desktop\\Proyecto Pamela\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
               "RelativeToolTip": "Capa de Datos\\Conexion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:16:17.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:16:17.758Z"
             }
           ]
         },
