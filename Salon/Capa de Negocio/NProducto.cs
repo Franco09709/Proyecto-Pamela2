@@ -15,52 +15,54 @@ namespace Capa_de_Negocio
         //Metodo de listar productos
         public static DataTable ListarProducto()
         {
-            
-            return DProducto.ListarProducto();
+            DProducto Datos = new DProducto();
+
+            return Datos.ListarProducto();
         }
 
         //Metodo de buscar productos
         public static DataTable BuscarProducto(EProducto producto)
         {
+            DProducto Datos = new DProducto();
 
-            return DProducto.BuscarProducto(producto);
+            return Datos.BuscarProducto(producto);
         }
 
         //Metodo para insertar productos
 
         public static string AgregarProducto(EProducto producto)
         {
-            return DProducto.InsertarProductos(producto);
+            DProducto Datos = new DProducto();
+
+            return Datos.InsertarProductos(producto);
         }
 
         public static string ActualizarProducto(EProducto producto)
         {
+             // Creamos la instancia para acceder a los metodos correspondientes
+            DProducto Datos = new DProducto();
+
             //Si nombre anterior es igual al nombre del producto hacer el update
             if (producto.NombreAnterior == producto.NombreProducto)
             {
-                return DProducto.ActualizarProductos(producto);
+                return Datos.ActualizarProductos(producto);
             }
             //De lo contrario verificar en la base de datos
             else
-            {   
+            {
                 
-                string Resultado= DProducto.Producto_ActualizarExiste(producto);
+                string Resultado = Datos.Producto_ActualizarExiste(producto);
                 if (Resultado.Equals("Si"))
                 {
                     return "Existe";
                 }
                 else
                 {
-                    return DProducto.ActualizarProductos(producto);
+                    return Datos.ActualizarProductos(producto);
                 }
 
             }
-            
-
-
-            
+             
         }
-
-
     }
 }

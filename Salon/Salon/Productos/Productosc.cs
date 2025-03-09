@@ -56,7 +56,7 @@ namespace Salon.Productos
 
         private void btnAgregProd_Click(object sender, EventArgs e)
         {
-            AñadirProducto añadirProducto = new AñadirProducto();
+            AñadirProducto añadirProducto = new AñadirProducto(this);
             añadirProducto.ShowDialog();
         }
 

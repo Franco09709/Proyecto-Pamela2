@@ -35,17 +35,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.DgvDatosServicios = new DrakeUI.Framework.DrakeUIDataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
-            this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
+            this.txtBuscarServicio = new DrakeUI.Framework.DrakeUITextBox();
             this.Closemenu = new System.Windows.Forms.PictureBox();
             this.btnAgregaremp = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreServicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosServicios)).BeginInit();
             this.drakeUIGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
@@ -72,7 +72,8 @@
             this.DgvDatosServicios.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DgvDatosServicios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvDatosServicios.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DgvDatosServicios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvDatosServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.DgvDatosServicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
@@ -91,9 +92,9 @@
             this.DgvDatosServicios.ColumnHeadersHeight = 32;
             this.DgvDatosServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvDatosServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar,
-            this.ID_Empleado,
-            this.Nombre,
+            this.editar,
+            this.ID,
+            this.NombreServicio,
             this.Precio,
             this.Estado});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -133,46 +134,8 @@
             this.DgvDatosServicios.Style = DrakeUI.Framework.UIStyle.Custom;
             this.DgvDatosServicios.StyleCustomMode = true;
             this.DgvDatosServicios.TabIndex = 228;
-            // 
-            // Editar
-            // 
-            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Editar.Frozen = true;
-            this.Editar.HeaderText = "";
-            this.Editar.Name = "Editar";
-            this.Editar.Width = 55;
-            // 
-            // ID_Empleado
-            // 
-            this.ID_Empleado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID_Empleado.DataPropertyName = "ID_Empleado";
-            this.ID_Empleado.Frozen = true;
-            this.ID_Empleado.HeaderText = "ID";
-            this.ID_Empleado.Name = "ID_Empleado";
-            this.ID_Empleado.Width = 50;
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.Frozen = true;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 300;
-            // 
-            // Precio
-            // 
-            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.Width = 300;
-            // 
-            // Estado
-            // 
-            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.Width = 195;
+            this.DgvDatosServicios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatosServicios_CellClick);
+            this.DgvDatosServicios.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DgvDatosServicios_CellPainting);
             // 
             // label1
             // 
@@ -187,7 +150,7 @@
             // 
             // drakeUIGradientPanel1
             // 
-            this.drakeUIGradientPanel1.Controls.Add(this.drakeUITextBox2);
+            this.drakeUIGradientPanel1.Controls.Add(this.txtBuscarServicio);
             this.drakeUIGradientPanel1.Controls.Add(this.Closemenu);
             this.drakeUIGradientPanel1.FillColor = System.Drawing.Color.White;
             this.drakeUIGradientPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -201,22 +164,23 @@
             this.drakeUIGradientPanel1.TabIndex = 233;
             this.drakeUIGradientPanel1.Text = null;
             // 
-            // drakeUITextBox2
+            // txtBuscarServicio
             // 
-            this.drakeUITextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.drakeUITextBox2.FillColor = System.Drawing.Color.White;
-            this.drakeUITextBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drakeUITextBox2.Location = new System.Drawing.Point(46, 3);
-            this.drakeUITextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.drakeUITextBox2.Maximum = 2147483647D;
-            this.drakeUITextBox2.Minimum = -2147483648D;
-            this.drakeUITextBox2.Name = "drakeUITextBox2";
-            this.drakeUITextBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.drakeUITextBox2.RectColor = System.Drawing.Color.White;
-            this.drakeUITextBox2.RectDisableColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.drakeUITextBox2.Size = new System.Drawing.Size(225, 27);
-            this.drakeUITextBox2.Style = DrakeUI.Framework.UIStyle.Custom;
-            this.drakeUITextBox2.TabIndex = 0;
+            this.txtBuscarServicio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarServicio.FillColor = System.Drawing.Color.White;
+            this.txtBuscarServicio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarServicio.Location = new System.Drawing.Point(46, 3);
+            this.txtBuscarServicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBuscarServicio.Maximum = 2147483647D;
+            this.txtBuscarServicio.Minimum = -2147483648D;
+            this.txtBuscarServicio.Name = "txtBuscarServicio";
+            this.txtBuscarServicio.Padding = new System.Windows.Forms.Padding(5);
+            this.txtBuscarServicio.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.txtBuscarServicio.RectDisableColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.txtBuscarServicio.Size = new System.Drawing.Size(225, 27);
+            this.txtBuscarServicio.Style = DrakeUI.Framework.UIStyle.Custom;
+            this.txtBuscarServicio.TabIndex = 0;
+            this.txtBuscarServicio.TextChanged += new System.EventHandler(this.txtBuscarServicio_TextChanged);
             // 
             // Closemenu
             // 
@@ -255,6 +219,42 @@
             this.pictureBox1.TabIndex = 223;
             this.pictureBox1.TabStop = false;
             // 
+            // editar
+            // 
+            this.editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.editar.HeaderText = "";
+            this.editar.Name = "editar";
+            this.editar.Width = 55;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // NombreServicio
+            // 
+            this.NombreServicio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NombreServicio.DataPropertyName = "NombreServicio";
+            this.NombreServicio.HeaderText = "Nombre";
+            this.NombreServicio.Name = "NombreServicio";
+            // 
+            // Precio
+            // 
+            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Precio.DataPropertyName = "Precio";
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Estado
+            // 
+            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Estado.DataPropertyName = "Estado";
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
             // Servicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,11 +287,11 @@
         private DrakeUI.Framework.DrakeUIDataGridView DgvDatosServicios;
         private System.Windows.Forms.Label label1;
         private DrakeUI.Framework.DrakeUIGradientPanel drakeUIGradientPanel1;
-        private DrakeUI.Framework.DrakeUITextBox drakeUITextBox2;
+        private DrakeUI.Framework.DrakeUITextBox txtBuscarServicio;
         private System.Windows.Forms.PictureBox Closemenu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Empleado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn editar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreServicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
