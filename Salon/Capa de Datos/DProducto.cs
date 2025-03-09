@@ -13,7 +13,7 @@ namespace Capa_de_Datos
     {
         //Metodo para listar los productos
 
-        public static DataTable ListarProducto()
+        public DataTable ListarProducto()
         {
             SqlDataReader Resultado;
             DataTable tabla = new DataTable();
@@ -46,7 +46,7 @@ namespace Capa_de_Datos
         }
 
         //Metodo para buscar productos
-        public static DataTable BuscarProducto(EProducto producto)
+        public DataTable BuscarProducto(EProducto producto)
         {
             SqlDataReader Resultado;
             DataTable tabla = new DataTable();
@@ -81,7 +81,7 @@ namespace Capa_de_Datos
 
         //Metodo para insertar productos
 
-        public static string InsertarProductos(EProducto producto)
+        public string InsertarProductos(EProducto producto)
         {
             string Resultado = "";
 
@@ -133,7 +133,7 @@ namespace Capa_de_Datos
         }
 
 
-        public static string ActualizarProductos(EProducto producto)
+        public string ActualizarProductos(EProducto producto)
         {
             string Resultado = "";
 
@@ -173,7 +173,7 @@ namespace Capa_de_Datos
         }
 
 
-        public static string Producto_ActualizarExiste(EProducto producto)
+        public string Producto_ActualizarExiste(EProducto producto)
         {
             string Resultado = "";
             SqlConnection sqlcon = new SqlConnection();
@@ -210,10 +210,6 @@ namespace Capa_de_Datos
             }
             return Resultado;
         }
-
-
-
-
 
     }
 }

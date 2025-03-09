@@ -152,6 +152,7 @@
             this.btnAgregarServ.TabIndex = 233;
             this.btnAgregarServ.Text = "      Guardar";
             this.btnAgregarServ.UseVisualStyleBackColor = false;
+            this.btnAgregarServ.Click += new System.EventHandler(this.btnAgregarServ_Click);
             // 
             // label11
             // 
