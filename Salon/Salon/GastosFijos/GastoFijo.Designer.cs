@@ -34,13 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.DgvDatosEmpleados = new DrakeUI.Framework.DrakeUIDataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
             this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
@@ -48,10 +41,17 @@
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGenerarPeriodos = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosEmpleados)).BeginInit();
+            this.DgvDatosProductos = new DrakeUI.Framework.DrakeUIDataGridView();
+            this.editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.drakeUIGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -66,126 +66,6 @@
             this.label2.TabIndex = 224;
             this.label2.Text = "Gastos Fijos";
             // 
-            // DgvDatosEmpleados
-            // 
-            this.DgvDatosEmpleados.AllowUserToAddRows = false;
-            this.DgvDatosEmpleados.AllowUserToDeleteRows = false;
-            this.DgvDatosEmpleados.AllowUserToResizeColumns = false;
-            this.DgvDatosEmpleados.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DgvDatosEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvDatosEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DgvDatosEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.DgvDatosEmpleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.DgvDatosEmpleados.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.DgvDatosEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DgvDatosEmpleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.DgvDatosEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvDatosEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvDatosEmpleados.ColumnHeadersHeight = 32;
-            this.DgvDatosEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DgvDatosEmpleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Edit,
-            this.ID_Empleado,
-            this.Nombre,
-            this.Descripcion,
-            this.Monto,
-            this.Fecha});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvDatosEmpleados.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvDatosEmpleados.EnableHeadersVisualStyles = false;
-            this.DgvDatosEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DgvDatosEmpleados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.DgvDatosEmpleados.Location = new System.Drawing.Point(23, 167);
-            this.DgvDatosEmpleados.Name = "DgvDatosEmpleados";
-            this.DgvDatosEmpleados.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DgvDatosEmpleados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvDatosEmpleados.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DgvDatosEmpleados.RowHeadersVisible = false;
-            this.DgvDatosEmpleados.RowHeadersWidth = 25;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DgvDatosEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DgvDatosEmpleados.RowTemplate.Height = 29;
-            this.DgvDatosEmpleados.SelectedIndex = -1;
-            this.DgvDatosEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvDatosEmpleados.ShowRect = false;
-            this.DgvDatosEmpleados.Size = new System.Drawing.Size(1001, 354);
-            this.DgvDatosEmpleados.StripeOddColor = System.Drawing.Color.White;
-            this.DgvDatosEmpleados.Style = DrakeUI.Framework.UIStyle.Custom;
-            this.DgvDatosEmpleados.StyleCustomMode = true;
-            this.DgvDatosEmpleados.TabIndex = 227;
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Edit.Frozen = true;
-            this.Edit.HeaderText = "";
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 55;
-            // 
-            // ID_Empleado
-            // 
-            this.ID_Empleado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID_Empleado.DataPropertyName = "ID_Empleado";
-            this.ID_Empleado.Frozen = true;
-            this.ID_Empleado.HeaderText = "ID";
-            this.ID_Empleado.Name = "ID_Empleado";
-            this.ID_Empleado.Width = 70;
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.Frozen = true;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 160;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Descripcion.Frozen = true;
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.Width = 317;
-            // 
-            // Monto
-            // 
-            this.Monto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Monto.Frozen = true;
-            this.Monto.HeaderText = "Monto";
-            this.Monto.Name = "Monto";
-            this.Monto.Width = 200;
-            // 
-            // Fecha
-            // 
-            this.Fecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Width = 200;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -193,7 +73,7 @@
             this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(-3, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1054, 1);
+            this.label1.Size = new System.Drawing.Size(999, 1);
             this.label1.TabIndex = 229;
             this.label1.Text = "label1";
             // 
@@ -244,13 +124,13 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVisualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnVisualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(182)))));
             this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVisualizar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizar.ForeColor = System.Drawing.Color.White;
             this.btnVisualizar.Image = global::Salon.Properties.Resources.icons8_más_2_matemáticas_23;
             this.btnVisualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVisualizar.Location = new System.Drawing.Point(925, 116);
+            this.btnVisualizar.Location = new System.Drawing.Point(870, 116);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(99, 32);
             this.btnVisualizar.TabIndex = 233;
@@ -270,7 +150,7 @@
             // 
             // btnGenerarPeriodos
             // 
-            this.btnGenerarPeriodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnGenerarPeriodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(182)))));
             this.btnGenerarPeriodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarPeriodos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerarPeriodos.ForeColor = System.Drawing.Color.White;
@@ -284,25 +164,141 @@
             this.btnGenerarPeriodos.UseVisualStyleBackColor = false;
             this.btnGenerarPeriodos.Click += new System.EventHandler(this.btnGenerarPeriodos_Click);
             // 
+            // DgvDatosProductos
+            // 
+            this.DgvDatosProductos.AllowUserToAddRows = false;
+            this.DgvDatosProductos.AllowUserToDeleteRows = false;
+            this.DgvDatosProductos.AllowUserToResizeColumns = false;
+            this.DgvDatosProductos.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DgvDatosProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvDatosProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvDatosProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.DgvDatosProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.DgvDatosProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.DgvDatosProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvDatosProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.DgvDatosProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvDatosProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvDatosProductos.ColumnHeadersHeight = 32;
+            this.DgvDatosProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvDatosProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.editar,
+            this.Id,
+            this.NombreProducto,
+            this.Precio,
+            this.Proveedor,
+            this.FechaIngreso});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvDatosProductos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvDatosProductos.EnableHeadersVisualStyles = false;
+            this.DgvDatosProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DgvDatosProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.DgvDatosProductos.Location = new System.Drawing.Point(22, 168);
+            this.DgvDatosProductos.Name = "DgvDatosProductos";
+            this.DgvDatosProductos.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DgvDatosProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvDatosProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvDatosProductos.RowHeadersVisible = false;
+            this.DgvDatosProductos.RowHeadersWidth = 25;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DgvDatosProductos.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvDatosProductos.RowTemplate.Height = 29;
+            this.DgvDatosProductos.SelectedIndex = -1;
+            this.DgvDatosProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvDatosProductos.ShowRect = false;
+            this.DgvDatosProductos.Size = new System.Drawing.Size(947, 354);
+            this.DgvDatosProductos.StripeOddColor = System.Drawing.Color.White;
+            this.DgvDatosProductos.Style = DrakeUI.Framework.UIStyle.Custom;
+            this.DgvDatosProductos.StyleCustomMode = true;
+            this.DgvDatosProductos.TabIndex = 237;
+            // 
+            // editar
+            // 
+            this.editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.editar.HeaderText = "";
+            this.editar.Name = "editar";
+            this.editar.Width = 55;
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            this.Id.Width = 95;
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NombreProducto.DataPropertyName = "NombreProducto";
+            this.NombreProducto.HeaderText = "Nombre";
+            this.NombreProducto.Name = "NombreProducto";
+            // 
+            // Precio
+            // 
+            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Precio.DataPropertyName = "Precio";
+            this.Precio.HeaderText = "Descripción";
+            this.Precio.Name = "Precio";
+            // 
+            // Proveedor
+            // 
+            this.Proveedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Proveedor.DataPropertyName = "Proveedor";
+            this.Proveedor.HeaderText = "Monto";
+            this.Proveedor.Name = "Proveedor";
+            // 
+            // FechaIngreso
+            // 
+            this.FechaIngreso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FechaIngreso.DataPropertyName = "FechaIngreso";
+            this.FechaIngreso.HeaderText = "Fecha";
+            this.FechaIngreso.Name = "FechaIngreso";
+            // 
             // GastoFijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 556);
+            this.ClientSize = new System.Drawing.Size(993, 556);
+            this.Controls.Add(this.DgvDatosProductos);
             this.Controls.Add(this.btnGenerarPeriodos);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.drakeUIGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DgvDatosEmpleados);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GastoFijo";
             this.Text = "GastoFijo";
-            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosEmpleados)).EndInit();
             this.drakeUIGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,17 +309,17 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Closemenu;
-        private DrakeUI.Framework.DrakeUIDataGridView DgvDatosEmpleados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Empleado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.Label label1;
         private DrakeUI.Framework.DrakeUIGradientPanel drakeUIGradientPanel1;
         private DrakeUI.Framework.DrakeUITextBox drakeUITextBox2;
         private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.Button btnGenerarPeriodos;
+        private DrakeUI.Framework.DrakeUIDataGridView DgvDatosProductos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn editar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
     }
 }

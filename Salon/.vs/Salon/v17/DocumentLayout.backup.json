@@ -1,30 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\",
+  "WorkspaceRootPath": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\gfranco\\desktop\\proyecto-pamela2\\proyecto-pamela2\\salon\\salon\\empleados\\a\u00F1adirempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\empleados\\a\u00F1adirempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\gfranco\\desktop\\proyecto-pamela2\\proyecto-pamela2\\salon\\salon\\empleados\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\empleados\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\gfranco\\desktop\\proyecto-pamela2\\proyecto-pamela2\\salon\\capa de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|c:\\users\\gfranco\\desktop\\proyecto-pamela2\\proyecto-pamela2\\salon\\capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8786BDAA-53C3-4B45-91D9-F6E5F7FA4E3B}|Capa de Datos\\Capa de Datos.csproj|solutionrelative:capa de datos\\dservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\servicios\\actualizarservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\salon\\productos\\actualizarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\salon\\productos\\actualizarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\productos\\actualizarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|c:\\users\\carlos alberto nin\\desktop\\proyecto pamela\\proyecto-pamela2\\salon\\salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8EE54284-FEDB-4EC1-A7E4-6D45FF3C64C3}|Salon\\Capa de Presentacion.csproj|solutionrelative:salon\\servicios\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,10 +63,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "A\u00F1adirEmpleados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Empleados\\A\u00F1adirEmpleados.cs",
+              "RelativeDocumentMoniker": "Salon\\Empleados\\A\u00F1adirEmpleados.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Empleados\\A\u00F1adirEmpleados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Salon\\Empleados\\A\u00F1adirEmpleados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T19:12:01.782Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empleado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Empleados\\Empleado.cs",
+              "RelativeDocumentMoniker": "Salon\\Empleados\\Empleado.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Empleados\\Empleado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Salon\\Empleados\\Empleado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T19:11:58.802Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "Capa de Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Capa de Datos\\Conexion.cs",
+              "RelativeToolTip": "Capa de Datos\\Conexion.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T19:09:16.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
               "RelativeDocumentMoniker": "Capa de Datos\\DServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Capa de Datos\\DServicio.cs",
               "RelativeToolTip": "Capa de Datos\\DServicio.cs",
               "ViewState": "AgIAAK0AAAAAAAAAAAAIwL8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -63,11 +112,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ActualizarServicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
               "RelativeDocumentMoniker": "Salon\\Servicios\\ActualizarServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "Salon\\Servicios\\ActualizarServicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T17:43:02.405Z",
@@ -75,11 +124,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Servicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
               "RelativeDocumentMoniker": "Salon\\Servicios\\Servicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
               "RelativeToolTip": "Salon\\Servicios\\Servicio.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAUwC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Servicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs",
               "RelativeDocumentMoniker": "Salon\\Servicios\\Servicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\Servicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "Salon\\Servicios\\Servicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T17:37:47.874Z",
@@ -100,24 +149,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ActualizarProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Productos\\ActualizarProducto.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Productos\\ActualizarProducto.cs",
               "RelativeDocumentMoniker": "Salon\\Productos\\ActualizarProducto.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Productos\\ActualizarProducto.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Productos\\ActualizarProducto.cs",
               "RelativeToolTip": "Salon\\Productos\\ActualizarProducto.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAmwGoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:36:44.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T17:36:44.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ActualizarServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
+              "DocumentMoniker": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
               "RelativeDocumentMoniker": "Salon\\Servicios\\ActualizarServicio.cs",
-              "ToolTip": "C:\\Users\\Carlos Alberto Nin\\Desktop\\PROYECTO PAMELA\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
+              "ToolTip": "C:\\Users\\gfranco\\Desktop\\Proyecto-Pamela2\\Proyecto-Pamela2\\Salon\\Salon\\Servicios\\ActualizarServicio.cs",
               "RelativeToolTip": "Salon\\Servicios\\ActualizarServicio.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAkwFgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

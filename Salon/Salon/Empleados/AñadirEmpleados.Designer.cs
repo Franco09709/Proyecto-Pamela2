@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.drakeUITextBox9 = new DrakeUI.Framework.DrakeUITextBox();
-            this.Closeagregempleado = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.drakeUITextBox5 = new DrakeUI.Framework.DrakeUITextBox();
@@ -52,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
             this.drakeUITextBox1 = new DrakeUI.Framework.DrakeUITextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.drakeUITextBox10 = new DrakeUI.Framework.DrakeUITextBox();
@@ -60,6 +57,9 @@
             this.drakeUITextBox11 = new DrakeUI.Framework.DrakeUITextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cbRol = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Closeagregempleado = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Closeagregempleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,19 +80,6 @@
             this.drakeUITextBox9.Size = new System.Drawing.Size(245, 29);
             this.drakeUITextBox9.Style = DrakeUI.Framework.UIStyle.Custom;
             this.drakeUITextBox9.TabIndex = 253;
-            // 
-            // Closeagregempleado
-            // 
-            this.Closeagregempleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Closeagregempleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.Closeagregempleado.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
-            this.Closeagregempleado.Location = new System.Drawing.Point(1081, 9);
-            this.Closeagregempleado.Name = "Closeagregempleado";
-            this.Closeagregempleado.Size = new System.Drawing.Size(28, 24);
-            this.Closeagregempleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Closeagregempleado.TabIndex = 252;
-            this.Closeagregempleado.TabStop = false;
-            this.Closeagregempleado.Click += new System.EventHandler(this.Closeagregempleado_Click);
             // 
             // label13
             // 
@@ -117,14 +104,6 @@
             this.label12.Size = new System.Drawing.Size(1121, 43);
             this.label12.TabIndex = 250;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(882, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 190);
-            this.pictureBox1.TabIndex = 249;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -329,6 +308,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Maculino",
+            "Femenino"});
             this.comboBox1.Location = new System.Drawing.Point(36, 210);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(245, 29);
@@ -391,22 +373,6 @@
             this.drakeUITextBox1.Size = new System.Drawing.Size(245, 29);
             this.drakeUITextBox1.Style = DrakeUI.Framework.UIStyle.Custom;
             this.drakeUITextBox1.TabIndex = 230;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Salon.Properties.Resources.icons8_guardar_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1018, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 32);
-            this.button1.TabIndex = 259;
-            this.button1.Text = "      Guardar";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -497,6 +463,43 @@
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(245, 29);
             this.cbRol.TabIndex = 264;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(182)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Salon.Properties.Resources.icons8_guardar_24;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1018, 467);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 32);
+            this.button1.TabIndex = 259;
+            this.button1.Text = "      Guardar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Closeagregempleado
+            // 
+            this.Closeagregempleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Closeagregempleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.Closeagregempleado.Image = global::Salon.Properties.Resources.icons8_multiplicar_23__2_;
+            this.Closeagregempleado.Location = new System.Drawing.Point(1081, 9);
+            this.Closeagregempleado.Name = "Closeagregempleado";
+            this.Closeagregempleado.Size = new System.Drawing.Size(28, 24);
+            this.Closeagregempleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Closeagregempleado.TabIndex = 252;
+            this.Closeagregempleado.TabStop = false;
+            this.Closeagregempleado.Click += new System.EventHandler(this.Closeagregempleado_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(882, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(216, 190);
+            this.pictureBox1.TabIndex = 249;
+            this.pictureBox1.TabStop = false;
             // 
             // AñadirEmpleados
             // 

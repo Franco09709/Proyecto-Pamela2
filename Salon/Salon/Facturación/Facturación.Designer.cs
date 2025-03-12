@@ -35,13 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgvDatosEmpleados = new DrakeUI.Framework.DrakeUIDataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
@@ -49,6 +42,13 @@
             this.Closemenu = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAgregfactu = new System.Windows.Forms.Button();
+            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosEmpleados)).BeginInit();
             this.drakeUIGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
@@ -63,7 +63,8 @@
             this.DgvDatosEmpleados.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DgvDatosEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvDatosEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DgvDatosEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvDatosEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.DgvDatosEmpleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
@@ -126,61 +127,6 @@
             this.DgvDatosEmpleados.Style = DrakeUI.Framework.UIStyle.Custom;
             this.DgvDatosEmpleados.StyleCustomMode = true;
             this.DgvDatosEmpleados.TabIndex = 57;
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Edit.HeaderText = "";
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 55;
-            // 
-            // ID_Empleado
-            // 
-            this.ID_Empleado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID_Empleado.DataPropertyName = "ID_Empleado";
-            this.ID_Empleado.HeaderText = "ID";
-            this.ID_Empleado.Name = "ID_Empleado";
-            this.ID_Empleado.Width = 95;
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Nombre.HeaderText = "Fact No.";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 130;
-            // 
-            // Apellido
-            // 
-            this.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Apellido.DataPropertyName = "Apellido";
-            this.Apellido.HeaderText = "Monto neto";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Width = 130;
-            // 
-            // Cedula
-            // 
-            this.Cedula.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Cedula.DataPropertyName = "Cedula";
-            this.Cedula.HeaderText = "Fecha";
-            this.Cedula.Name = "Cedula";
-            this.Cedula.Width = 130;
-            // 
-            // Sexo
-            // 
-            this.Sexo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Sexo.DataPropertyName = "Sexo";
-            this.Sexo.HeaderText = "Cliente";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.Width = 120;
-            // 
-            // Estado
-            // 
-            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Estado.DataPropertyName = "Estado";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
             // 
             // label1
             // 
@@ -261,7 +207,7 @@
             // btnAgregfactu
             // 
             this.btnAgregfactu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregfactu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.btnAgregfactu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(182)))));
             this.btnAgregfactu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregfactu.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregfactu.ForeColor = System.Drawing.Color.White;
@@ -274,6 +220,58 @@
             this.btnAgregfactu.Text = "      Nuevo";
             this.btnAgregfactu.UseVisualStyleBackColor = false;
             this.btnAgregfactu.Click += new System.EventHandler(this.btnAgregfactu_Click);
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Edit.HeaderText = "";
+            this.Edit.Name = "Edit";
+            this.Edit.Width = 55;
+            // 
+            // ID_Empleado
+            // 
+            this.ID_Empleado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID_Empleado.DataPropertyName = "ID_Empleado";
+            this.ID_Empleado.HeaderText = "ID";
+            this.ID_Empleado.Name = "ID_Empleado";
+            this.ID_Empleado.Visible = false;
+            this.ID_Empleado.Width = 95;
+            // 
+            // Nombre
+            // 
+            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombre.HeaderText = "Fact No.";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Apellido.DataPropertyName = "Apellido";
+            this.Apellido.HeaderText = "Monto neto";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Cedula
+            // 
+            this.Cedula.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cedula.DataPropertyName = "Cedula";
+            this.Cedula.HeaderText = "Fecha";
+            this.Cedula.Name = "Cedula";
+            // 
+            // Sexo
+            // 
+            this.Sexo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Sexo.DataPropertyName = "Sexo";
+            this.Sexo.HeaderText = "Cliente";
+            this.Sexo.Name = "Sexo";
+            // 
+            // Estado
+            // 
+            this.Estado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Estado.DataPropertyName = "Estado";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Estado.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
             // 
             // Facturación
             // 
