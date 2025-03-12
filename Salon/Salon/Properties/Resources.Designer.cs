@@ -143,6 +143,16 @@ namespace Salon.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Empleadosdashboard {
+            get {
+                object obj = ResourceManager.GetObject("Empleadosdashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap front_view_woman_getting_her_manicure_done_at_the_salon_scaled_1 {
             get {
                 object obj = ResourceManager.GetObject("front-view-woman-getting-her-manicure-done-at-the-salon-scaled-1", resourceCulture);
@@ -196,6 +206,16 @@ namespace Salon.Properties {
         internal static System.Drawing.Bitmap icons8_bolsa_de_dinero_22__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-bolsa-de-dinero-22 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bolsa_de_dinero_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bolsa-de-dinero-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +373,16 @@ namespace Salon.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_maletín_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maletín-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_más_2_matemáticas_19 {
             get {
                 object obj = ResourceManager.GetObject("icons8-más-2-matemáticas-19", resourceCulture);
@@ -456,6 +486,26 @@ namespace Salon.Properties {
         internal static System.Drawing.Bitmap icons8_tablero_23 {
             get {
                 object obj = ResourceManager.GetObject("icons8-tablero-23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tablero_25__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tablero-25 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tablero_25__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tablero-25 (2)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

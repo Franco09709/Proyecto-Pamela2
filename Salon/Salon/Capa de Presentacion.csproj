@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="GastosFijos\GenerarPeriodosGastosfijos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     <Compile Include="Usuarios\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GastosFijos\GenerarPeriodosGastosfijos.resx">
       <DependentUpon>GenerarPeriodosGastosfijos.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,7 +358,7 @@
     <None Include="Resources\icons8-usuario-masculino-en-círculo-26.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dashboard\" />
+    <None Include="Resources\icons8-tablero-25 %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-multiplicar-23.png" />
@@ -477,6 +486,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\editardef1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleadosdashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tablero-25 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maletín-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bolsa-de-dinero-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

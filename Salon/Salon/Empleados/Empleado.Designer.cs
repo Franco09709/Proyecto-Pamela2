@@ -35,12 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.drakeUIGradientPanel1 = new DrakeUI.Framework.DrakeUIGradientPanel();
             this.drakeUITextBox2 = new DrakeUI.Framework.DrakeUITextBox();
-            this.Closemenu = new System.Windows.Forms.PictureBox();
             this.DgvDatosEmpleados = new DrakeUI.Framework.DrakeUIDataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAgregarEmp = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,10 +44,15 @@
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Posicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sueldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Closemenu = new System.Windows.Forms.PictureBox();
+            this.btnAgregarEmp = new System.Windows.Forms.Button();
             this.drakeUIGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).BeginInit();
             this.SuspendLayout();
             // 
             // drakeUIGradientPanel1
@@ -82,22 +82,11 @@
             this.drakeUITextBox2.Minimum = -2147483648D;
             this.drakeUITextBox2.Name = "drakeUITextBox2";
             this.drakeUITextBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.drakeUITextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            this.drakeUITextBox2.RectColor = System.Drawing.Color.White;
             this.drakeUITextBox2.RectDisableColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
             this.drakeUITextBox2.Size = new System.Drawing.Size(225, 27);
             this.drakeUITextBox2.Style = DrakeUI.Framework.UIStyle.Custom;
             this.drakeUITextBox2.TabIndex = 0;
-            // 
-            // Closemenu
-            // 
-            this.Closemenu.BackColor = System.Drawing.Color.White;
-            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
-            this.Closemenu.Location = new System.Drawing.Point(17, 1);
-            this.Closemenu.Name = "Closemenu";
-            this.Closemenu.Size = new System.Drawing.Size(26, 30);
-            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Closemenu.TabIndex = 225;
-            this.Closemenu.TabStop = false;
             // 
             // DgvDatosEmpleados
             // 
@@ -107,7 +96,8 @@
             this.DgvDatosEmpleados.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DgvDatosEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvDatosEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DgvDatosEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvDatosEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.DgvDatosEmpleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
@@ -171,56 +161,6 @@
             this.DgvDatosEmpleados.Style = DrakeUI.Framework.UIStyle.Custom;
             this.DgvDatosEmpleados.StyleCustomMode = true;
             this.DgvDatosEmpleados.TabIndex = 232;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(-11, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1070, 1);
-            this.label1.TabIndex = 237;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(29, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 20);
-            this.label2.TabIndex = 236;
-            this.label2.Text = "Empleados";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Salon.Properties.Resources.icons8_empleados_23__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 235;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnAgregarEmp
-            // 
-            this.btnAgregarEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregarEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
-            this.btnAgregarEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarEmp.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEmp.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarEmp.Image = global::Salon.Properties.Resources.icons8_más_2_matemáticas_23;
-            this.btnAgregarEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarEmp.Location = new System.Drawing.Point(950, 139);
-            this.btnAgregarEmp.Name = "btnAgregarEmp";
-            this.btnAgregarEmp.Size = new System.Drawing.Size(83, 32);
-            this.btnAgregarEmp.TabIndex = 233;
-            this.btnAgregarEmp.Text = "      Nuevo";
-            this.btnAgregarEmp.UseVisualStyleBackColor = false;
-            this.btnAgregarEmp.Click += new System.EventHandler(this.btnAgregarEmp_Click);
             // 
             // Edit
             // 
@@ -288,6 +228,67 @@
             this.Sueldo.HeaderText = "Sueldo";
             this.Sueldo.Name = "Sueldo";
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(-11, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1070, 1);
+            this.label1.TabIndex = 237;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(29, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 20);
+            this.label2.TabIndex = 236;
+            this.label2.Text = "Empleados";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Salon.Properties.Resources.icons8_empleados_23__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 235;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Closemenu
+            // 
+            this.Closemenu.BackColor = System.Drawing.Color.White;
+            this.Closemenu.Image = global::Salon.Properties.Resources.icons8_búsqueda_22;
+            this.Closemenu.Location = new System.Drawing.Point(17, 1);
+            this.Closemenu.Name = "Closemenu";
+            this.Closemenu.Size = new System.Drawing.Size(26, 30);
+            this.Closemenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Closemenu.TabIndex = 225;
+            this.Closemenu.TabStop = false;
+            // 
+            // btnAgregarEmp
+            // 
+            this.btnAgregarEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregarEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(182)))));
+            this.btnAgregarEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEmp.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEmp.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarEmp.Image = global::Salon.Properties.Resources.icons8_más_2_matemáticas_23;
+            this.btnAgregarEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarEmp.Location = new System.Drawing.Point(950, 139);
+            this.btnAgregarEmp.Name = "btnAgregarEmp";
+            this.btnAgregarEmp.Size = new System.Drawing.Size(83, 32);
+            this.btnAgregarEmp.TabIndex = 233;
+            this.btnAgregarEmp.Text = "      Nuevo";
+            this.btnAgregarEmp.UseVisualStyleBackColor = false;
+            this.btnAgregarEmp.Click += new System.EventHandler(this.btnAgregarEmp_Click);
+            // 
             // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,9 +304,9 @@
             this.Name = "Empleado";
             this.Text = "Empleados";
             this.drakeUIGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Closemenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

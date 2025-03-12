@@ -124,3 +124,5 @@ C:\Users\Carlos Alberto Nin\Desktop\PROYECTO PAMELA\Proyecto-Pamela2\Salon\Salon
 C:\Users\Carlos Alberto Nin\Desktop\PROYECTO PAMELA\Proyecto-Pamela2\Salon\Salon\bin\Debug\Capa de Datos.pdb
 C:\Users\Carlos Alberto Nin\Desktop\PROYECTO PAMELA\Proyecto-Pamela2\Salon\Salon\obj\Debug\Capa de .AE42D9F8.Up2Date
 C:\Users\Carlos Alberto Nin\Desktop\PROYECTO PAMELA\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Servicios.ActualizarServicio.resources
+C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Servicios.ActualizarServicio.resources
+C:\Users\gfranco\Desktop\Proyecto-Pamela2\Proyecto-Pamela2\Salon\Salon\obj\Debug\Salon.Dashboard.Dashboard.resources

@@ -1,4 +1,5 @@
-﻿using Salon.Nomina;
+﻿using Salon.Dashboard;
+using Salon.Nomina;
 using Salon.Servicios;
 using System;
 using System.Collections.Generic;
@@ -132,6 +133,12 @@ namespace Salon
         {
             Productos.Productosc productosc=new Productos.Productosc();
             AbrirFormulario(productosc);
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {   
+            Dashboard.Dashboard dashboard=new Dashboard.Dashboard();
+            AbrirFormulario(dashboard);
         }
     }
 }

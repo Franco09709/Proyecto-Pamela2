@@ -116,7 +116,20 @@ namespace Salon.Facturación
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
-        {
+        {   
+            if (txtServicio.Text.Equals(string.Empty) && txtProducto.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debes seleccionar un producto o un servicio para agregarlo a la lista", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            else if (txtCliente.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("El campo cliente es obligatorio!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            else
+            { 
+
             DataGridViewRow file = new DataGridViewRow();
             file.CreateCells(DgvDatosFacturar);
             file.Cells[9].Value = txtVendedor.Text;
@@ -127,12 +140,29 @@ namespace Salon.Facturación
             file.Cells[9].Value = txtCliente.Text;
             file.Cells[7].Value = numericUpDown1.Value;
             file.Cells[11].Value = txtFechafact.Text;
-            //Aqui estamos haciendo el calculo del precio del producto por la cantidad mas el precio del servicio
-            file.Cells[12].Value = (float.Parse(txtPrecioProducto.Text) * (float)numericUpDown1.Value) + float.Parse(txtPrecioServicio.Text);
+            
+                if(!string.IsNullOrWhiteSpace(txtPrecioProducto.Text))
+
+
+            if(numericUpDown1.Value > 0)
+            {
+                    if (txtPrecioServicio.Text.Equals(string.Empty))
+                    {
+
+                    }
+                //Aqui estamos haciendo el calculo del precio del producto por la cantidad mas el precio del servicio
+                file.Cells[12].Value = (float.Parse(txtPrecioProducto.Text) * (float)numericUpDown1.Value) + float.Parse(txtPrecioServicio.Text);
+            }
+            else
+            {
+                file.Cells[12].Value = float.Parse(txtPrecioServicio.Text);
+            }
+            
             //Pasando los datos al datagrid view 
             DgvDatosFacturar.Rows.Add(file);
 
             ObtenerTotal();
+        }
         }
 
         private void btnFacturar_Click_1(object sender, EventArgs e)
